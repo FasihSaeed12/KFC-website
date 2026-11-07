@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC | Our Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">KFC.</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="menu.html">Our Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-3"><a class="btn-kfc" href="#cart">Cart 🛒 <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="page-banner">
+    <div class="container">
+        <h1>OUR <span class="red-text">MENU</span></h1>
+        <p class="lead">Find your next favorite bite.</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <h2 class="section-title">THE <span class="red-text">CRAVINGS</span></h2>
+            <p class="section-subtitle">Explore our delicious food collection.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4 reveal">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80" alt="Fried chicken">
+                    <div class="card-body">
+                        <h5>Hot & Crispy Chicken</h5>
+                        <p>Golden, crunchy and delicious.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">Rs. 650</span>
+                            <button class="btn-kfc" onclick="addToCart('Hot & Crispy Chicken',650)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 reveal">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Chicken burger">
+                    <div class="card-body">
+                        <h5>Zinger Burger</h5>
+                        <p>A spicy and crunchy chicken burger.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">Rs. 550</span>
+                            <button class="btn-kfc" onclick="addToCart('Zinger Burger',550)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 reveal">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80" alt="Chicken sandwich">
+                    <div class="card-body">
+                        <h5>Chicken Sandwich</h5>
+                        <p>Fresh, tasty and full of flavor.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">Rs. 450</span>
+                            <button class="btn-kfc" onclick="addToCart('Chicken Sandwich',450)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 reveal">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80" alt="Chicken wings">
+                    <div class="card-body">
+                        <h5>Chicken Wings</h5>
+                        <p>Juicy wings with a crispy coating.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">Rs. 500</span>
+                            <button class="btn-kfc" onclick="addToCart('Chicken Wings',500)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 reveal">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Pizza">
+                    <div class="card-body">
+                        <h5>Loaded Feast</h5>
+                        <p>A delicious meal for big appetites.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">Rs. 1200</span>
+                            <button class="btn-kfc" onclick="addToCart('Loaded Feast',1200)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 reveal">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80" alt="Milkshake">
+                    <div class="card-body">
+                        <h5>Chocolate Shake</h5>
+                        <p>A sweet and creamy treat.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">Rs. 350</span>
+                            <button class="btn-kfc" onclick="addToCart('Chocolate Shake',350)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section-padding bg-light" id="cart">
+    <div class="container">
+        <h2 class="section-title">YOUR <span class="red-text">CART</span> 🛒</h2>
+        <div class="bg-white p-4 rounded shadow-sm mt-4">
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center">
+                <h4>Total</h4>
+                <h4 class="price" id="cart-total">Rs. 0</h4>
+            </div>
+            <button class="btn-kfc mt-3" onclick="alert('This is a demo cart. Online checkout is not connected yet.')">
+                Proceed to Checkout
+            </button>
+            <button class="btn btn-outline-dark mt-3" onclick="if(confirm('Clear your cart?')) { cart=[]; saveCart(); renderCart(); }">
+                Clear Cart
+            </button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><div class="footer-brand">KFC.</div><p>It's finger lickin' good!</p></div>
+            <div class="col-md-6">
+                <h5>Explore</h5>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">© 2026 KFC Website Concept. Educational project.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
